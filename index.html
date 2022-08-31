@@ -152,70 +152,73 @@
           <h2 class="section__title">Choose our delicious and best products</h2>
 
           <ul class="products__filters">
-            <li class="products__item products__line">
-              <h3 class="product__title">New Delicacies</h3>
+            <li
+              class="products__item products__line active-products"
+              data-filter=".croffle"
+            >
+              <h3 class="product__title">New Croffle</h3>
               <span class="products__stock">3 products</span>
             </li>
-            <li class="products__item products__line">
-              <h3 class="product__title">Hot Coffee</h3>
-              <span class="products__stock"> 4 products</span>
+            <li class="products__item products__line" data-filter=".coffe">
+              <h3 class="product__title">Coffee</h3>
+              <span class="products__stock"> 3 products</span>
             </li>
-            <li class="products__item products__line">
-              <h3 class="product__title">Cakes And Delicacies</h3>
-              <span class="products__stock"> 4 products</span>
+            <li class="products__item" data-filter=".toast">
+              <h3 class="product__title">Korean Toast</h3>
+              <span class="products__stock"> 3 products</span>
             </li>
           </ul>
 
           <div class="products__content grid">
-            <!-- Delicacies -->
-            <article class="products__card">
+            <!-- Croffle -->
+            <article class="products__card croffle">
               <div class="products__shape">
                 <img
-                  src="assets/img/delicacies1.png"
+                  src="assets/img/Croffle-1.jpeg"
                   alt=""
                   class="products__img"
                 />
               </div>
 
               <div class="products__data">
-                <h2 class="products__price">$5</h2>
-                <h3 class="products__name">Cookies</h3>
+                <h2 class="products__price">RP.26.000</h2>
+                <h3 class="products__name">Croffle Basic</h3>
 
                 <button class="button products__button">
                   <i class="bx bx-shopping-bag"></i>
                 </button>
               </div>
             </article>
-            <article class="products__card">
+            <article class="products__card croffle">
               <div class="products__shape">
                 <img
-                  src="assets/img/delicacies2.png"
+                  src="assets/img/Croffle-2-brownsugar.webp"
                   alt=""
                   class="products__img"
                 />
               </div>
 
               <div class="products__data">
-                <h2 class="products__price">$6</h2>
-                <h3 class="products__name">Croissant</h3>
+                <h2 class="products__price">Rp.26.000</h2>
+                <h3 class="products__name">Croffle Brown Sugar</h3>
 
                 <button class="button products__button">
                   <i class="bx bx-shopping-bag"></i>
                 </button>
               </div>
             </article>
-            <article class="products__card">
+            <article class="products__card croffle">
               <div class="products__shape">
                 <img
-                  src="assets/img/delicacies3.png"
+                  src="assets/img/Croffle-3-cinamon.webp"
                   alt=""
                   class="products__img"
                 />
               </div>
 
               <div class="products__data">
-                <h2 class="products__price">$4</h2>
-                <h3 class="products__name">Croissant</h3>
+                <h2 class="products__price">Rp.26.000</h2>
+                <h3 class="products__name">Croffle Sweet Cinnamon</h3>
 
                 <button class="button products__button">
                   <i class="bx bx-shopping-bag"></i>
@@ -223,7 +226,7 @@
               </div>
             </article>
             <!-- coffe -->
-            <article class="products__card">
+            <article class="products__card coffe">
               <div class="products__shape">
                 <img
                   src="/assets/img/coffe_1.webp"
@@ -241,7 +244,7 @@
                 </button>
               </div>
             </article>
-            <article class="products__card">
+            <article class="products__card coffe">
               <div class="products__shape">
                 <img
                   src="/assets/img/coffe_2_geisha.webp"
@@ -259,7 +262,7 @@
                 </button>
               </div>
             </article>
-            <article class="products__card">
+            <article class="products__card coffe">
               <div class="products__shape">
                 <img
                   src="/assets/img/coffe_3_kopisusuaren.webp"
@@ -278,7 +281,7 @@
               </div>
             </article>
             <!-- Korean Toast -->
-            <article class="products__card">
+            <article class="products__card toast">
               <div class="products__shape">
                 <img
                   src="assets/img/chiken_chrispy.webp"
@@ -296,7 +299,7 @@
                 </button>
               </div>
             </article>
-            <article class="products__card">
+            <article class="products__card toast">
               <div class="products__shape">
                 <img
                   src="assets/img/toast_marsmellow.webp"
@@ -314,7 +317,7 @@
                 </button>
               </div>
             </article>
-            <article class="products__card">
+            <article class="products__card toast">
               <div class="products__shape">
                 <img
                   src="assets/img/toastToastBeefAndCheese.webp"
@@ -337,7 +340,47 @@
       </section>
 
       <!--==================== QUALITY ====================-->
-      <section class="quality section" id="premium"></section>
+      <section class="quality section" id="premium">
+        <div class="quality__container container">
+          <h2 class="section__title">
+            We offer a premium and better quality preparation just for you!
+          </h2>
+
+          <div class="quality__content grid">
+            <div class="quality__images">
+              <img
+                src="assets/img/fruits_pancake.webp"
+                alt=""
+                class="quality__img-big"
+              />
+              <img
+                src="assets/img/strawberry_pancake.webp"
+                alt=""
+                class="quality__img-small"
+              />
+            </div>
+
+            <div class="quality__data">
+              <h1 class="quality__title">Pancake</h1>
+              <h2 class="quality__price">Rp. 32.200</h2>
+              <span class="quality__special"> Fruits Pancake </span>
+              <p class="quality__description">
+                We are delighted with our Pancake. That's why you get the best
+                Fruits Pancake , for a special price.
+              </p>
+
+              <div class="quality__button">
+                <button class="button">Buy Now</button>
+
+                <a href="#" class="quality__button">
+                  See More
+                  <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--==================== LOGOS ====================-->
       <section class="logo section"></section>
@@ -352,7 +395,7 @@
     <!--========== SCROLL UP ==========-->
 
     <!--=============== MIXITUP FILTER ===============-->
-    <script src=""></script>
+    <script src="assets/js/mixitup.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
